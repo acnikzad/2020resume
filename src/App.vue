@@ -1,32 +1,54 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <header>
+      <nav>
+        <div class="row">
+            <ul class="main-nav">
+              <li><a href="#">Resume</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="row">
+          <div class="col span-6-of-12 hero-boxes">
+            <img src="../public/assets/images/2020headshotsidesquare.jpg" class="hero-pic">
+          </div>
+          <div class="col span-6-of-12  hero-boxes">
+            <div class="hero-text-box">
+              <h1>Aria Nikzad</h1>
+              <br>
+              <h2>Full Stack Developer</h2>
+            </div>
+            <div class="icon-small">
+              <i class="devicon-ruby-plain"></i>
+              <i class="devicon-rails-plain"></i>
+              <i class="devicon-javascript-plain"></i>
+              <i class="devicon-html5-plain"></i>
+              <i class="devicon-heroku-original"></i>
+              <i class="devicon-github-plain"></i>
+              <i class="devicon-bootstrap-plain"></i>
+              <i class="devicon-css3-plain"></i>
+              <i class="devicon-vuejs-plain"></i>
+            </div>
+          </div>
+          <h1></h1>
+        </div>
+      </section>
+    </header>
     <router-view/>
+
+    <footer id="footer" class="midnight-blue">
+        <!-- ... -->
+    </footer><!--/#footer-->
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
+
+<div class="row gtr-200">
+        <div class="col-8 col-12-medium">
