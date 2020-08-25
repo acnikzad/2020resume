@@ -105,7 +105,6 @@ header {
   text-align: right;
   border: solid #9FA8A5;
   border-radius: 50%;
-  padding-top: 5px;
 }
 
 .hero-boxes {
@@ -153,8 +152,37 @@ header {
 /*-------------------------------------------------
 PROFILE
 -------------------------------------------------*/
-.section-profile h2 {
-  text-align: center;
+.section-projects div {
+  display: block;
+}
+
+.project-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  margin-left: 0%;
+  margin-top: -5%;
+  /*box-shadow: 0 5px 5px #efefef;*/
+}
+
+.project-box col {
+  padding-left: 0;
+  border-left: 12px solid #9699A5;
+}
+
+.project-box ul {
+  list-style: none;
+}
+
+.project-box ul li {
+  padding: 5px 0;
+}
+
+.section-projects h2 {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: -2%;
+  font-weight: 300;
 }
 
 /*------- ICONS -------*/
@@ -171,20 +199,28 @@ PROFILE
 
 .icon-small i:hover {
   opacity: 1;
+  color: #6D7B3C;
   transform: scale(1.25);
 }
 
-.timeline {
-  border-left: solid 10px #9FA8A5;
-  padding-left: 5%;
+a:link,
+a:visited {
+  color: #43423D;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #43423D;
+  transition: border-bottom 0.2s, color0.2s
 }
 
-.circle {
-    border-radius: 50%;
-    width: 25px;
-    height: auto;
-    text-align: left;
-    float: left;
-    display: block;
-
+a:hover,
+a:active {
+  color: #6D7B3C;
+  border-bottom: 1px solid transparent;
 }
+
+/*colors
+#43423D
+#CDC9C6
+#9FA8A5
+#9699A5
+6D7B3C*/
