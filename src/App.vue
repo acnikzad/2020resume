@@ -25,13 +25,13 @@
             <div class="icon-small">
               <i class="devicon-ruby-plain"></i>
               <i class="devicon-rails-plain"></i>
+              <i class="devicon-vuejs-plain"></i>
               <i class="devicon-javascript-plain"></i>
+              <i class="devicon-css3-plain"></i>
               <i class="devicon-html5-plain"></i>
+              <i class="devicon-bootstrap-plain"></i>
               <i class="devicon-heroku-original"></i>
               <i class="devicon-github-plain"></i>
-              <i class="devicon-bootstrap-plain"></i>
-              <i class="devicon-css3-plain"></i>
-              <i class="devicon-vuejs-plain"></i>
             </div>
           </div>
           <h1></h1>
