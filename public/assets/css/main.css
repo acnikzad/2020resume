@@ -148,37 +148,33 @@ header {
   border-bottom: 2px solid #6D7B3C;
 }
 
-
 /*-------------------------------------------------
-PROFILE
+PORTFOLIO
 -------------------------------------------------*/
 .section-projects {
   background-color: #f8f8f8
 }
-
-.border-box {
-  margin: 10%;
-  border: 5px solid #43423D;
-  border-radius: 10px;
+.section-projects-header {
+  margin-bottom: -5%;
 }
 
-.section-projects div {
-  display: block;
-  background-color: #fff;
+.portfolio-box {
+  margin: 10%;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .project-box {
   /*background-color: #fff;*/
-  border-radius: 5px;
   width: 100%;
   margin-left: 0%;
   margin-top: -5%;
+  border-left: 2px solid #9699A5;
   /*box-shadow: 0 5px 5px #efefef;*/
 }
 
-.project-box col {
-  padding-left: 0;
-  border-left: 12px solid #9699A5;
+.project-box:first-child {
+  border-left: none;
 }
 
 .project-box ul {
@@ -214,6 +210,15 @@ PROFILE
   transform: scale(1.25);
 }
 
+.footer-icon-small {
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  font-size: 190%;
+  opacity: .4;
+  transition: transform 0.4s;
+}
+
 a:link,
 a:visited {
   color: #43423D;
@@ -235,3 +240,81 @@ a:active {
 #9FA8A5
 #9699A5
 6D7B3C*/
+
+.tile-text {
+  position: relative;
+  text-align: center;
+  color: #CDC9C6;
+}
+
+.tiles img {
+  display: block;
+  width: 100%;
+  padding: 5%;
+  border-radius: 10%;
+  opacity: .7
+}
+.tiles img:hover,
+.tiles img:active {
+  opacity: 1;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-------------------------------------------------
+FOOTER
+-------------------------------------------------*/
+
+footer {
+  background-color: #333;
+  padding: 50px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin: 0;
+  }
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
+}
