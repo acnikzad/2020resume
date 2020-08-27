@@ -1,3 +1,10 @@
+/*colors
+#43423D
+#CDC9C6
+#9FA8A5
+#9699A5
+6D7B3C*/
+
 /*-------------------------------------------------
 BASIC SETUP
 -------------------------------------------------*/
@@ -164,12 +171,24 @@ PORTFOLIO
   border-radius: 10px;
 }
 
+.portfolio-box h2:after {
+  display: block;
+  height: 2px;
+  background-color: #6D7B3C;
+  content: " ";
+  width: 100px; 
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 .project-box {
-  /*background-color: #fff;*/
+  background-color: #fff;
+  padding: 2%;
   width: 100%;
   margin-left: 0%;
   margin-top: -5%;
-  border-left: 2px solid #9699A5;
+  /*border-left: 2px solid #9699A5;*/
+  box-shadow: 0 5px 5px #efefef;
   /*box-shadow: 0 5px 5px #efefef;*/
 }
 
@@ -185,7 +204,7 @@ PORTFOLIO
   padding: 5px 0;
 }
 
-.section-projects h2 {
+.section-projects h1 {
   text-align: left;
   margin-left: 15%;
   margin-top: -2%;
@@ -224,7 +243,7 @@ a:visited {
   color: #43423D;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid #43423D;
+  /*border-bottom: 1px solid #43423D;*/
   transition: border-bottom 0.2s, color0.2s
 }
 
@@ -234,12 +253,11 @@ a:active {
   border-bottom: 1px solid transparent;
 }
 
-/*colors
-#43423D
-#CDC9C6
-#9FA8A5
-#9699A5
-6D7B3C*/
+a img:link,
+a img:visited {
+  text-decoration: none;
+}
+
 
 .tile-text {
   position: relative;
@@ -248,7 +266,8 @@ a:active {
 }
 
 .tiles img {
-  display: block;
+  display: inline-block;
+  position: relative;
   width: 100%;
   padding: 5%;
   border-radius: 10%;
