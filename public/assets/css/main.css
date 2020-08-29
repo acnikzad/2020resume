@@ -265,24 +265,36 @@ a img:visited {
   position: relative;
   text-align: center;
   color: #CDC9C6;
+  padding-bottom: 5%;
+}
+.image {
+  width: 100%;
+  padding: 0%;
+  border-radius: 10%;
+  overflow: hidden;
 }
 
 .tiles img {
   display: inline-block;
-  background-color: #000;
   position: relative;
   width: 100%;
   padding: 0%;
   border-radius: 10%;
-  opacity: 0.7;
   transition: transform 0.5s, opacity 0.5s;
+  filter: brightness(95%);
 }
 .tiles img:hover,
 .tiles img:active {
-  opacity: 1;
-  transition: transform 0.5s, opacity 0.5s;
-  transform: scale(1.06);
+  filter: brightness(97%);
+  transform: scale(1.05);
 }
+/*-------------------------------------------------
+SECTION EDUCATION
+-------------------------------------------------*/
+.section-education {
+
+}
+
 
 /*-------------------------------------------------
 FOOTER
