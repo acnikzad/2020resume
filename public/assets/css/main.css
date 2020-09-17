@@ -42,6 +42,12 @@ section {
 
 }
 
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+
 /*------- HEADINGS -------*/
 
 h1, h2, h3 {
@@ -112,6 +118,13 @@ header {
   text-align: right;
   border: solid #9FA8A5;
   border-radius: 50%;
+  transition: transform 0.4s
+}
+
+.hero-pic:hover {
+  border: solid #6D7B3C;
+  border-radius: 50%;
+  transform: scale(1.05)
 }
 
 .hero-boxes {
@@ -161,8 +174,9 @@ PORTFOLIO
 .section-projects {
   background-color: #f8f8f8
 }
-.section-projects-header {
+.section-header {
   margin-bottom: -5%;
+  display: block;
 }
 
 .portfolio-box {
@@ -239,6 +253,16 @@ PORTFOLIO
   transition: transform 0.4s;
 }
 
+.education-icon {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  color: #9FA8A5;
+  font-size: 190%;
+  opacity: .4;
+  transition: transform 0.4s;
+}
+
 a:link,
 a:visited {
   color: #43423D;
@@ -291,8 +315,38 @@ a img:visited {
 /*-------------------------------------------------
 SECTION EDUCATION
 -------------------------------------------------*/
-.section-education {
+.section-education h1 {
+  text-align: left;
+  color: #595E62;
+  margin-left: 15%;
+  margin-top: -2%;
+  font-weight: 300;
+}
 
+.education-box {
+  argin: 10%;
+  width: 80%;
+  border-radius: 10px;
+  display: block;
+}
+
+.education-box h2:after {
+  display: block;
+  height: 2px;
+  background-color: #6D7B3C;
+  content: " ";
+  width: 100px; 
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.schools {
+  text-align: center;
+}
+
+.education-list {
+  list-style: none;
+  text-align: center;
 }
 
 
